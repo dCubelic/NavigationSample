@@ -32,9 +32,4 @@ extension SecondViewController: UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.textColor = .white
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SecondViewController")
-        navigationController?.pushViewController(vc, animated: true)
-    }
 }

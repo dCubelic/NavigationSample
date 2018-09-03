@@ -17,16 +17,9 @@ class ViewController: UIViewController {
         
         title = "First"
         
-        setupSearchController()
-    }
-
-    func setupSearchController() {
         let searchController = UISearchController(searchResultsController: nil)
-        
-        if #available(iOS 11.0, *) {
-            navigationItem.searchController = searchController
-        }
-        
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
     }
 
 }
